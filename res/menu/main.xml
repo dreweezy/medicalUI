@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/create"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom"
+        android:title="Create" />
+    <item
+        android:id="@+id/view"
+        android:orderInCategory="2"
+        android:showAsAction="ifRoom"
+        android:title="View" />
+    <item
+        android:id="@+id/settings"
+        android:orderInCategory="3"
+        android:showAsAction="ifRoom"
+        android:title="Setting" />
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="4"
+        android:showAsAction="ifRoom"
+        android:title="Log Out" />
+
+</menu>

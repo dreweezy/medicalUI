@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.test"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+	<uses-feature android:name="android.hardware.camera" />
+	    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.test.MainActivity"
+            android:label="Health Care Multimedia Information System" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".MainMenu"
+            android:label="Main Menu" ></activity>
+        <activity 
+            android:name=".SelectPatient"
+            android:label="Select Patient" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+            android:resource="@xml/searchable" />
+        </activity>
+        <activity 
+            android:name=".Settings"
+            android:label="Settings" ></activity>
+        <activity 
+            android:name=".CreateReport"
+            android:label="Create Report" ></activity>
+        <activity 
+            android:name=".RecentReport"
+            android:label="Recent Reports" ></activity>
+        <activity
+            android:name=".ReportPage"
+            android:label="Report Page" ></activity>
+        
+    </application>
+
+</manifest>

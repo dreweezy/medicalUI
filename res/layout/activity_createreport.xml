@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cameraButton"
+        android:layout_alignBottom="@+id/cameraButton"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@+id/cameraButton"
+        android:height="100dp"
+        android:text="Voice"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:width="300dp" />
+
+    <Button
+        android:id="@+id/cameraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="89dp"
+        android:layout_marginTop="53dp"
+        android:height="100dp"
+        android:text="Camera"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:width="300dp" />
+
+    <Button
+        android:id="@+id/saveAndExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/voice"
+        android:layout_below="@+id/voice"
+        android:layout_marginTop="89dp"
+        android:height="100dp"
+        android:width="300dp"
+        android:text="Save and Exit"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cameraButton"
+        android:layout_alignTop="@+id/saveAndExit"
+        android:height="100dp"
+        android:width="300dp"
+        android:text="Submit"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/submit"
+        android:layout_alignRight="@+id/saveAndExit"
+        android:layout_below="@+id/saveAndExit"
+        android:layout_marginTop="93dp"
+        android:ems="20"
+        android:height="500dp"
+        android:hint="@string/textbox_hint"
+        android:inputType="textPostalAddress" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/submit"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="303dp" />
+
+</RelativeLayout>

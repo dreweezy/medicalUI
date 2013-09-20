@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:drawableLeft="@drawable/ic_launcher"
+        android:height="200dp"
+        android:text="Name:Something\nAge:25\nGender:M\nLocation:San Jose, CA"
+        android:textSize="20sp"
+        android:width="600dp" />
+
+    <Button
+        android:id="@+id/Button02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/selectPatientButton"
+        android:layout_marginTop="65dp"
+        android:drawableLeft="@drawable/ic_launcher"
+        android:height="200dp"
+        android:text="Name:Something\nAge:25\nGender:M\nLocation:San Jose, CA"
+        android:textSize="20sp"
+        android:width="600dp" />
+
+    <Button
+        android:id="@+id/selectPatientButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Button01"
+        android:layout_marginTop="73dp"
+        android:drawableLeft="@drawable/ic_launcher"
+        android:height="200dp"
+        android:text="Name:Something\nAge:25\nGender:M\nLocation:San Jose, CA"
+        android:textSize="20sp"
+        android:width="600dp" />
+
+</RelativeLayout>

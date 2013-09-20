@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="99dp"
+        android:text="Menu"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/cameraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="65dp"
+        android:text="Choose Patient" />
+
+    <Button
+        android:id="@+id/reportButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cameraButton"
+        android:layout_alignRight="@+id/cameraButton"
+        android:layout_below="@+id/cameraButton"
+        android:layout_marginTop="62dp"
+        android:text="Report" />
+
+    <Button
+        android:id="@+id/recentReportButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reportButton"
+        android:layout_alignRight="@+id/reportButton"
+        android:layout_below="@+id/reportButton"
+        android:layout_marginTop="76dp"
+        android:text="Recent Report" />
+
+    <Button
+        android:id="@+id/settingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/recentReportButton"
+        android:layout_alignRight="@+id/recentReportButton"
+        android:layout_below="@+id/recentReportButton"
+        android:layout_marginTop="74dp"
+        android:text="Setting" />
+
+</RelativeLayout>
